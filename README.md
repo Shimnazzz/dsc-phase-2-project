@@ -1,13 +1,9 @@
 # Phase 2 Project
-
-Another module down--you're almost half way there!
-
-![awesome](https://raw.githubusercontent.com/learn-co-curriculum/dsc-phase-2-project-campus/master/halfway-there.gif)
-
-All that remains in Phase 2 is to put our newfound data science skills to use with a large project! This project should take 20 to 30 hours to complete.
+Welcome to the Repository for Project 2 created by Shimnaz Fathima! You will find a brief overview of the project, the findings and the recommendations derived after the completion of this project here. Please feel free to browse through the files to know more about the iterations and regression models developed in this project.
 
 ## Project Overview
 
+This project involves using 
 For this project, you will use regression modeling to analyze house sales in a northwestern county.
 
 ### The Data
