@@ -61,3 +61,21 @@ After the 4th iteration, model validation was performed by splitting the data in
 
 ### Results
 
+After the completion of first iteration, the following results were obtained:
+![image](https://github.com/Shimnazzz/dsc-phase-2-project/assets/147800579/85293e70-9739-4780-9637-ce33fa024736)
+
+The adjusted R square value was found to be 0.562 which means that 56% of variance of price can be explained by this model. and the model has high significance. In terms of the significance of the features, all features except sqft_lot was found to be siginificant to explain the dependant variable. 
+
+To confirm the linear regression assumptions, the Q-Q plot was plotted as shown below: 
+![image](https://github.com/Shimnazzz/dsc-phase-2-project/assets/147800579/9604989b-ced4-49f5-91f4-cd2ad7f24337)
+
+The residuals, from the above plot can be seen that are not completely normal and some skewness is present. Also from the fitted values vs residuals plots for each varaibles, conical shape was seen in the case for sqft_lot, sqft_lot15 as shown below
+![image](https://github.com/Shimnazzz/dsc-phase-2-project/assets/147800579/84315376-6a15-4158-b121-a6372ddd8378)
+
+After the doing iteration 2, these two variables were part of the variables removed for multicollinearity and therefore impact on the assumptions of linear regression model can be avoided.
+
+After completion of Iteration 4, the following result was obtained after running the statsmodel:
+![image](https://github.com/Shimnazzz/dsc-phase-2-project/assets/147800579/2d2825ff-6522-4704-89b8-b1790c78bc8d)
+
+
+
