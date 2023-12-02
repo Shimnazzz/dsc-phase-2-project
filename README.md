@@ -3,8 +3,7 @@ Welcome to the Repository for Project 2 created by Shimnaz Fathima! You will fin
 
 ## Project Overview
 
-This project involves using 
-For this project, you will use regression modeling to analyze house sales in a northwestern county.
+This project involves using the data of housing sales in the Northwestern county of King County and recommending the client, King County Real Estate, a real estate agent in the region on aspects related to houses that will improve the value of the property 
 
 ### The Data
 
