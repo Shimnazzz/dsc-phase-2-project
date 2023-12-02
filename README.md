@@ -3,30 +3,39 @@ Welcome to the Repository for Project 2 created by Shimnaz Fathima! You will fin
 
 ## Project Overview
 
-This project involves using the data of housing sales in the Northwestern county of King County and recommending the client, King County Real Estate, a real estate agent in the region on aspects related to houses that will improve the value of the property 
-
-### The Data
-
-This project uses the King County House Sales dataset, which can be found in  `kc_house_data.csv` in the data folder in this repo. The description of the column names can be found in `column_names.md` in the same folder. As with most real world data sets, the column names are not perfectly described, so you'll have to do some research or use your best judgment if you have questions about what the data means.
-
-It is up to you to decide what data from this dataset to use and how to use it. If you are feeling overwhelmed or behind, we recommend you ignore some or all of the following features:
-
-* date
-* view
-* sqft_above
-* sqft_basement
-* yr_renovated
-* zipcode
-* lat
-* long
-* sqft_living15
-* sqft_lot15
+This project involves using the data of housing sales in the Northwestern county of King County and recommending the client, King County Real Estate, a real estate agent in the region on aspects related to houses that will improve the value of the property. 
 
 ### Business Problem
 
-It is up to you to define a stakeholder and business problem appropriate to this dataset.
+This project uses Multilinear Correlation theory to assess the features that improve the price of the property and recommend it to our client King County Real Estate. These recommendations will used by them to target houses with high value and also to recommend their potential house selling clients on increasing their value of the property. After the analysis, the factor by which the value of the property will increase for each feature will be discussed.
 
-If you are struggling to define a stakeholder, we recommend you complete a project for a real estate agency that helps homeowners buy and/or sell homes. A business problem you could focus on for this stakeholder is the need to provide advice to homeowners about how home renovations might increase the estimated value of their homes, and by what amount.
+### The Data
+
+This project uses the King County House Sales dataset which includes the price of the property and related parameters which is listed below with the corresponding column names in the dataset:
+
+* No of berdrooms (bedrooms)
+* No of bathrooms (bathroom)
+* Sqft footage of the home (sqft_living)
+* Sqft footage of the lot (sqft_lot)
+* No of floors in the house (floors)
+* If the house has a view to a waterfront (waterfront)
+* Number of views made by customer (view)
+* Overall condition of the house (condition)
+* Overall grade given to the husing unit based on King County grading system (grade)
+* Sqft footage of the house apart from the basement (sqft_above)
+* Sqft footage of the basement (sqft_basement)
+* Year the house was built (yr_built)
+* Year when house was renovated (yr_renovated)
+* Zipcode (zipcode)
+* Latitude of the house location (lat)
+* Longitude of the house location (long)
+* The square footage of interior housing living space for the nearest 15 neighbours (sqft_living15) 
+* The square footage of the land lots of the nearest 15 neighbors (sqft_lot15)
+
+### Methodology
+
+Since the prime focus accessing the factors affectin the price of the property, the dependable variable is considered as "price" for the analysis. Also assuming that the latitude, longtiude and zipcode will not have a linear relationship with the price and hence these three parameters will not be used in the analysis. Eventhough location of property has high significance on the price of the property, it need not have a linear correlation with the price. In simpler words, we could not say that with the increase in the latitude values, the price of teh proporty will increae or decrease. Hence these parameters were dropped in the beginning of teh analysis itself.
+
 
 ## Deliverables
 
