@@ -85,8 +85,9 @@ The model was also validated by checking the measn sqaure error of the training 
 
 ### Inferences
 
-* Based on the coefficients, the features with high impact on price are sqft_living, floors, view, condition, grade and renovations.
+* Based on the coefficients, the features with high impact on price are sqft_living, floors, waterfront view, condition, grade and renovations.
 * The recommendations can be derived for King COunty Real Estate Agent for targetting the high price properties:
-    # The number of floors can have a positive impact on the price. The log of price will increase by 0.23 - 0.578 by having 2 - 3 floors. In other words there will an increase in price by 1.26 - 1.78 times the value of the property.
-  #
+    * The number of floors can have a positive impact on the price. The log of price will increase by 0.23 - 0.578 by having 2 - 3 floors. In other words there will an increase in price by 1.26 - 1.78 times the value of the property.
+    * Having a waterfront property can improve the price by 1.4 times the value of the property.
+    * Better the condition and grade (in terms of the Kings County Grading system), better will be the price of the property. Improved condition of the propoerty can increase the value of the property by 1.4 - 1.85 times the value of the property. Having a grade of 11 can imcreae the price of the property by 9 times.
 
