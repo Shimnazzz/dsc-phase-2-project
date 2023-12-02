@@ -34,37 +34,30 @@ This project uses the King County House Sales dataset which includes the price o
 
 ### Methodology
 
-Since the prime focus accessing the factors affectin the price of the property, the dependable variable is considered as "price" for the analysis. Also assuming that the latitude, longtiude and zipcode will not have a linear relationship with the price and hence these three parameters will not be used in the analysis. Eventhough location of property has high significance on the price of the property, it need not have a linear correlation with the price. In simpler words, we could not say that with the increase in the latitude values, the price of teh proporty will increae or decrease. Hence these parameters were dropped in the beginning of teh analysis itself.
+Since the prime focus accessing the factors affectin the price of the property, the dependable variable is considered as "price" for the analysis. Also assuming that the latitude, longtiude and zipcode will not have a linear relationship with the price and hence these three parameters will not be used in the analysis. Eventhough location of property has high significance on the price of the property, it need not have a linear correlation with the price. In simpler words, we could not say that with the increase in the latitude values, the price of the property will increase or decrease. Hence these parameters were dropped in the beginning of the analysis itself.
 
+The project then progresses through four iterations. They are described as below:
 
-## Deliverables
+#### Iteration 1:
+In this iteration, a general understanding of the data is obtained through plotting histograms and scatter plots. Based on this required corrections were made such as removing 0 values from sqft_basement which was making the data highly skewed. After that the statemodel was run and relevant statistical parameters like Adjacent R- square value, model significance, significance of different predictors, the skewness and Kurtosis of the model were determined. Also by plotting the Q-Q plot and the Fitted value Vs the Residuals plot for checking the normality of model residuals and the Heteroscedasticity/Homoscedasticity assumption.
 
-There are three deliverables for this project:
+#### Iteration 2:
 
-* A **GitHub repository**
-* A **Jupyter Notebook**
-* A **non-technical presentation**
+In order to improve the model, multicollinearity among the variables were checked and variables with correlation factor greater than 0.75 was considered as highly correlated and n-1 variables were removed, where n denotes the number of variables with high correlation among each other. Also dummy variables were introduced for the categoracal variables and to avoid dummy variable trap, one of the column in each dummy variable set was removed.
 
-Review the "Project Submission & Review" page in the "Milestones Instructions" topic for instructions on creating and submitting your deliverables. Refer to the rubric associated with this assignment for specifications describing high-quality deliverables.
+After this the statsmodel was run and the relevant statistical measures were recorded.
 
-### Key Points
+#### Iteration 3:
 
-* **Your deliverables should explicitly address each step of the data science process.** Refer to [the Data Science Process lesson](https://github.com/learn-co-curriculum/dsc-data-science-processes) from Topic 19 for more information about process models you can use.
+In this iteration, to remove the skewness of the conitnuous variables, log transformation was performed and to bring the values to a uniform scale, feature scaling was performed. Further to this statsmodel was run and if here is any improvement in the model was checked.
 
-* **Your Jupyter Notebook should demonstrate an iterative approach to modeling.** This means that you begin with a basic model, evaluate it, and then provide justification for and proceed to a new model. After you finish refining your models, you should provide 1-3 paragraphs discussing your final model - this should include interpreting at least 3 important parameter estimates or statistics.
+#### Iteration 4:
 
-* **Based on the results of your models, your notebook and presentation should discuss at least two features that have strong relationships with housing prices.**
+After the previous iteration, stepwise forward and backward regression was performed to understand the which features are highly significant and with low significance in the model. Statsmodel was run again after removing the least significant features in the model. The improvement in the results were recorded and inferences for the client was derived from this model.
 
-## Getting Started
+#### Model Validation:
 
-Start on this project by forking and cloning [this project repository](https://github.com/learn-co-curriculum/dsc-phase-2-project) to get a local copy of the dataset.
+After the 4th iteration, model validation was performed by splitting the data into training and test dataets. Log tranformation was done on the conitnuous variables and One Hot Encoding was performed on the categorical variables to convert them to numerical values. The mean square error between the estimated output and actual output was determined for both the training and test datasets. Based on this result, the model was evaluated to be over-fitting or under-fitting.
 
-We recommend structuring your project repository similar to the structure in [the Phase 1 Project Template](https://github.com/learn-co-curriculum/dsc-project-template). You can do this either by creating a new fork of that repository to work in or by building a new repository from scratch that mimics that structure.
+### Results
 
-## Project Submission and Review
-
-Review the "Project Submission & Review" page in the "Milestones Instructions" topic to learn how to submit your project and how it will be reviewed. Your project must pass review for you to progress to the next Phase.
-
-## Summary
-
-This project will give you a valuable opportunity to develop your data science skills using real-world data. The end-of-phase projects are a critical part of the program because they give you a chance to bring together all the skills you've learned, apply them to realistic projects for a business stakeholder, practice communication skills, and get feedback to help you improve. You've got this!
