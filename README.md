@@ -77,5 +77,16 @@ After the doing iteration 2, these two variables were part of the variables remo
 After completion of Iteration 4, the following result was obtained after running the statsmodel:
 ![image](https://github.com/Shimnazzz/dsc-phase-2-project/assets/147800579/2d2825ff-6522-4704-89b8-b1790c78bc8d)
 
+The adjusted R square was observed to be 0.530, which is a clear reduction from the first iteration. Even though the percentage of variance of the price explained by the model has reduced, the assumptions of linear regression has become more valid in this model. This is clearly seen in the JB value reducing from 217 to 68. This can also be seen in the straightness of the datapoints in the Q-Q plot of this model below:
 
+![image](https://github.com/Shimnazzz/dsc-phase-2-project/assets/147800579/979e53fe-4f1a-451c-a736-8c99241347a8)
+
+The model was also validated by checking the measn sqaure error of the training and test data set. The value for the former was 0.103365 while the latter value was 0.103383. Since the mean square error for the testing data set was slightly higher but within the close range of that of training data set, we can confirm that the model is not overfitting but slightly underfitting.
+
+### Inferences
+
+* Based on the coefficients, the features with high impact on price are sqft_living, floors, view, condition, grade and renovations.
+* The recommendations can be derived for King COunty Real Estate Agent for targetting the high price properties:
+    # The number of floors can have a positive impact on the price. The log of price will increase by 0.23 - 0.578 by having 2 - 3 floors. In other words there will an increase in price by 1.26 - 1.78 times the value of the property.
+  #
 
