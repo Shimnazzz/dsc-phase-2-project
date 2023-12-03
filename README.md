@@ -91,3 +91,6 @@ The model was also validated by checking the measn sqaure error of the training 
     * Having a waterfront property can improve the price by 1.4 times the value of the property.
     * Better the condition and grade (in terms of the Kings County Grading system), better will be the price of the property. Improved condition of the propoerty can increase the value of the property by 1.4 - 1.85 times the value of the property. Having a grade of 11 can imcreae the price of the property by 9 times.
 
+* The real estate agency could provide the following recommendations to potential sellers to improve the value of the property:
+    * Doing a renovation can increase the value of the house by around 1.25 times the value of the house.
+    * Properties with just one bathroom depreciated the value of the house by 0.91 times. therefore, increasing the number of bathrooms while doing the renovations would be recommended.
