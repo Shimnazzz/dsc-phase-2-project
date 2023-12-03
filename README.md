@@ -37,12 +37,12 @@ This project uses the King County House Sales dataset which includes the price o
 
 ### Methodology
 
-Since the prime focus accessing the factors affectin the price of the property, the dependable variable is considered as "price" for the analysis. Also assuming that the latitude, longtiude and zipcode will not have a linear relationship with the price and hence these three parameters will not be used in the analysis. Eventhough location of property has high significance on the price of the property, it need not have a linear correlation with the price. In simpler words, we could not say that with the increase in the latitude values, the price of the property will increase or decrease. Hence these parameters were dropped in the beginning of the analysis itself.
+Since the prime focus accessing the factors affecting the price of the property, the dependable variable is considered as "price" for the analysis. Also assuming that the latitude, longtiude and zipcode will not have a linear relationship with the price and hence these three parameters will not be used in the analysis. Eventhough location of property has high significance on the price of the property, it need not have a linear correlation with the price. In simpler words, we could not say that with the increase in the latitude values, the price of the property will increase or decrease. Hence these parameters were dropped in the beginning of the analysis itself.
 
 The project then progresses through four iterations. They are described as below:
 
 #### Iteration 1:
-In this iteration, a general understanding of the data is obtained through plotting histograms and scatter plots. Based on this required corrections were made such as removing 0 values from sqft_basement which was making the data highly skewed. After that the statemodel was run and relevant statistical parameters like Adjacent R- square value, model significance, significance of different predictors, the skewness and Kurtosis of the model were determined. Also by plotting the Q-Q plot and the Fitted value Vs the Residuals plot for checking the normality of model residuals and the Heteroscedasticity/Homoscedasticity assumption.
+In this iteration, a general understanding of the data is obtained through plotting histograms and scatter plots. Based on this required corrections were made such as removing 0 values from sqft_basement which was making the data highly skewed. After that the statsmodel was run and relevant statistical parameters like Adjacent R- square value, model significance, significance of different predictors, the skewness and Kurtosis of the model were determined. Also by plotting the Q-Q plot and the Fitted value Vs the Residuals plot for checking the normality of model residuals and the Homoscedasticity assumption.
 
 #### Iteration 2:
 
@@ -60,7 +60,7 @@ After the previous iteration, stepwise forward and backward regression was perfo
 
 #### Model Validation:
 
-After the 4th iteration, model validation was performed by splitting the data into training and test dataets. Log tranformation was done on the conitnuous variables and One Hot Encoding was performed on the categorical variables to convert them to numerical values. The mean square error between the estimated output and actual output was determined for both the training and test datasets. Based on this result, the model was evaluated to be over-fitting or under-fitting.
+After the 4th iteration, model validation was performed by splitting the data into training and test dataets. Log tranformation was done on the continuous variables and One Hot Encoding was performed on the categorical variables to convert them to numerical values. The mean square error between the estimated output and actual output was determined for both the training and test datasets. Based on this result, the model was evaluated to be over-fitting or under-fitting.
 
 ### Results
 
@@ -84,12 +84,12 @@ The adjusted R square was observed to be 0.530, which is a clear reduction from 
 
 ![image](https://github.com/Shimnazzz/dsc-phase-2-project/assets/147800579/979e53fe-4f1a-451c-a736-8c99241347a8)
 
-The model was also validated by checking the measn sqaure error of the training and test data set. The value for the former was 0.103365 while the latter value was 0.103383. Since the mean square error for the testing data set was slightly higher but within the close range of that of training data set, we can confirm that the model is not overfitting but slightly underfitting.
+The model was also validated by checking the mean sqaure error of the training and test data set. The value for the former was 0.103365 while the latter value was 0.103383. Since the mean square error for the testing data set was slightly higher but within the close range of that of training data set, we can confirm that the model is not overfitting but slightly underfitting.
 
 ### Inferences
 
 * Based on the coefficients, the features with high impact on price are sqft_living, floors, waterfront view, condition, grade and renovations.
-* The recommendations can be derived for King COunty Real Estate Agent for targetting the high price properties:
+* The recommendations can be derived for King County Real Estate Agent for targetting the high price properties:
     * The number of floors can have a positive impact on the price. The log of price will increase by 0.23 - 0.578 by having 2 - 3 floors. In other words there will an increase in price by 1.26 - 1.78 times the value of the property.
     * Having a waterfront property can improve the price by 1.4 times the value of the property.
     * Better the condition and grade (in terms of the Kings County Grading system), better will be the price of the property. Improved condition of the propoerty can increase the value of the property by 1.4 - 1.85 times the value of the property. Having a grade of 11 can imcreae the price of the property by 9 times.
