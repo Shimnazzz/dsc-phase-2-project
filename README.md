@@ -1,6 +1,9 @@
 # Phase 2 Project
 Welcome to the Repository for Project 2 created by Shimnaz Fathima! You will find a brief overview of the project, the findings and the recommendations derived after the completion of this project here. Please feel free to browse through the files to know more about the iterations and regression models developed in this project.
 
+![image](https://github.com/Shimnazzz/dsc-phase-2-project/assets/147800579/3fe8c69f-769c-4c36-850d-2565e6be14b1)
+
+
 ## Project Overview
 
 This project involves using the data of housing sales in the Northwestern county of King County and recommending the client, King County Real Estate, a real estate agent in the region on aspects related to houses that will improve the value of the property. 
